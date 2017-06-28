@@ -16,9 +16,8 @@ GRID BOOTSTRAP
 @import "parts/_grid";
 
 /*--------------------------
- GLOBAl
+ MAIN
 --------------------------*/
-
 body{
 	color: #000;
 	min-width: 320px;
@@ -27,12 +26,6 @@ body{
 	font-size: 16px;
 	font-family: "Lato", sans-serif;
 }
-
-
-
-/*--------------------------
-HEADER
---------------------------*/
 
 .header{
 	width: 100%;
@@ -81,15 +74,13 @@ HEADER
 	}
 }
 
-/*--------------------------
-MENU
---------------------------*/
 .mob-mnu{
 	color: #fff;
 	font-size: 35px;
 	line-height: 1;
 	display: none;
 }
+
 .menu{
 	list-style-type: none;
 	padding-top: 5px;
@@ -192,6 +183,7 @@ MENU
 	}
 
 }
+
 .servises{
 	padding: 100px 0;
 }
@@ -225,7 +217,6 @@ MENU
 		}
 	}
 }
-
 
 .product{
 	background-image: url(../img/sectionbg.jpg);
@@ -282,6 +273,7 @@ MENU
 		margin-top: 75px;
 	}
 }
+
 .box-work{
 	width: 100%;
 	text-align: center;
@@ -333,6 +325,7 @@ MENU
 		opacity: 0.75;
 	}
 }
+
 .btn{
 	display: inline-block;
 	font-size: 24px;
@@ -397,7 +390,6 @@ MENU
 		}
 	}
 }
-
 
 .form{
 	width: 100%;
@@ -483,11 +475,14 @@ MENU
 	}
 }
 
-
 /*--------------------------
 MEDIA
 --------------------------*/
 @import "parts/_media";
+
+/*--------------------------
+IE CHECK
+--------------------------*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
 	.form__label{
 		top: 0;
