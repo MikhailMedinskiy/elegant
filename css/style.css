@@ -1140,7 +1140,7 @@ HEADER
   width: 100%;
   height: 100vh;
   padding-top: 50px;
-  background-image: url(../img/headerbg.png);
+  background-image: url(../img/headerbg.jpg);
   background-size: cover;
   background-attachment: fixed; }
   .header__menu {
@@ -1438,7 +1438,7 @@ MENU
       border-color: #00AAF5; }
 
 .footer {
-  background-image: url(../img/footerbg.png);
+  background-image: url(../img/footerbg.jpg);
   background-size: cover;
   background-attachment: fixed;
   padding-top: 110px;
