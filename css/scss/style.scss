@@ -1,14 +1,19 @@
 /*--------------------------
  reset
 --------------------------*/
-@import "_reset";
+@import "parts/_reset";
+
 
 /*--------------------------
  FONTS
 --------------------------*/
-@import "_fonts";
+@import "parts/_fonts";
 
 
+/*--------------------------
+GRID BOOTSTRAP
+--------------------------*/
+@import "parts/_grid";
 
 /*--------------------------
  GLOBAl
@@ -20,11 +25,123 @@ body{
 	background: #fff;
 	line-height: 1.6;
 	font-size: 16px;
-	font-family: "RobotoRegular", sans-serif;
+	font-family: "Lato", sans-serif;
 }
 
 
+
 /*--------------------------
- CUSTOM CODE GOES HERE
+HEADER
 --------------------------*/
 
+.header{
+	width: 100%;
+	height: 100vh;
+	padding-top: 50px;
+	background-image: url(../img/headerbg.png);
+	background-size: cover;
+	background-position: fixed;
+	&__menu{
+		text-align: right;
+	}
+	&__title{
+		text-align: center;
+	}
+	&__desc{
+		color: #fffefe;
+		font-family: Lato, sans-serif;
+		font-size: 22px;
+		font-weight: 400;
+		text-align: center;
+		max-width: 600px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	&__title-group{
+		margin-top: 25vh;
+	}
+}
+
+/*--------------------------
+MENU
+--------------------------*/
+
+.menu-list{
+	list-style-type: none;
+	&__item{
+		display: inline-block;
+		margin: 0 20px; 
+		text-transform: uppercase;
+	}
+	&__link{
+		color: #fff;
+		text-decoration: none;
+		transition: 0.3s;
+		border-bottom: 1px solid transparent;
+		&:hover{
+			border-bottom: 1px solid #fff;
+			color: #fff;
+			text-decoration: none;
+		}
+	}	
+}
+
+.title{
+	color: #ffffff;
+	font-family: Raleway, sans-serif;
+	font-size: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: relative;
+	margin: 0;
+	padding-bottom: 100px;
+	&:after{
+		display: block;
+		width: 82px;
+		height: 2px;
+		background-color: #fff;
+		position: absolute;
+		left: 50%;
+		margin-left: -41px;
+		bottom: 50px;
+		content: "";
+	}
+	&--section{
+		font-family: Raleway;
+		font-size: 35px;
+		font-weight: 700;
+		color: #222222;
+		&:after{
+			background-color: #222222;
+		}
+	}
+}
+
+.arrow-douw{
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	margin-left: -46px;
+	display: inline-block;
+	width: 92px;
+	height: 92px;
+	border: 2px solid #fff;
+	opacity: 0.5;
+	border-radius: 50%;
+	font-size: 35px;
+	color: #fff;
+	line-height: 88px;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.3s;
+	&:hover{
+		background: #fff;
+		color: #00AAF5;
+	}
+}
+.works{
+	&__title{
+		text-align: center;
+	}
+}
