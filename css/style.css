@@ -1519,10 +1519,12 @@ body {
       top: 0;
       left: 0;
       font-size: 16px; }
-    .form__input:valid ~ .form__label {
-      color: #00AAF5; }
-    .form__input:not(:placeholder-shown):invalid ~ .form__label {
-      color: red; }
+    .form__input:valid ~ .form__label, .form__input:valid {
+      color: #00AAF5;
+      border-color: #00AAF5; }
+    .form__input:not(:placeholder-shown):invalid ~ .form__label, .form__input:not(:placeholder-shown):invalid {
+      color: #EF0000;
+      border-color: #EF0000; }
 
 /*--------------------------
 MEDIA

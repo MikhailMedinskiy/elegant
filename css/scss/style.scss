@@ -18,6 +18,9 @@ GRID BOOTSTRAP
 /*--------------------------
  MAIN
 --------------------------*/
+
+$accentCollor: #00AAF5;
+
 body{
 	color: #000;
 	min-width: 320px;
@@ -100,7 +103,7 @@ body{
 			text-decoration: none;
 		}
 		&:focus{
-			border-color: #00AAF5;
+			border-color: $accentCollor;
 			color: #fff;
 			text-decoration: none;
 		}
@@ -127,7 +130,7 @@ body{
 	transition: 0.3s;
 	&:hover{
 		background: #fff;
-		color: #00AAF5;
+		color: $accentCollor;
 	}
 	&:focus{
 		background-color: transparent;
@@ -258,10 +261,10 @@ body{
 		text-decoration: underline;
 		transition: 0.3s;
 		&:hover{
-			color: #00AAF5;
+			color: $accentCollor;
 		}
 		&:focus{
-			color: lighten(#00AAF5, 4%)
+			color: lighten($accentCollor, 4%)
 		}
 	}
 }
@@ -310,7 +313,7 @@ body{
 		opacity: 0;
 		&:hover{
     		text-decoration: none;
-    		color: #00AAF5;
+    		color: $accentCollor;
     	}
 	}
 	&__icon{
@@ -353,12 +356,12 @@ body{
 		border: 2px solid #fff;
 		font-size: 24px;
 		&:hover{
-			color: #00AAF5;
-			border-color: #00AAF5;
+			color: $accentCollor;
+			border-color: $accentCollor;
 		}
 		&:focus{
 			color: #fff;
-			border-color: #00AAF5;
+			border-color: $accentCollor;
 		}
 	}
 }
@@ -385,7 +388,7 @@ body{
 		transition: 0.3s;
 		display: inline-block;
 		&:hover{
-			color: #00AAF5;
+			color: $accentCollor;
 			transform: rotateY(360deg);
 		}
 	}
@@ -466,11 +469,13 @@ body{
 			left: 0;
 			font-size: 16px;
 		}
-		&:valid ~ .form__label{
-			color: #00AAF5;
+		&:valid ~ .form__label, &:valid{
+			color: $accentCollor;
+			border-color: $accentCollor
 		}
-		&:not(:placeholder-shown):invalid ~ .form__label{
-			color: red;
+		&:not(:placeholder-shown):invalid ~ .form__label, &:not(:placeholder-shown):invalid{
+			color: #EF0000;
+			border-color: #EF0000;
 		}
 	}
 }
