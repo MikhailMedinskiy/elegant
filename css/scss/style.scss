@@ -145,9 +145,12 @@ body{
 
 .block{
 	width: 100%;
+	max-width: 340px;
+	margin: 0 auto;	
 	padding: 10px;
 	transition: 0.3s;
 	cursor: pointer;
+
 	&__img{
 		width:100%;
 		height: auto;
@@ -285,6 +288,8 @@ body{
 
 .box-work{
 	width: 100%;
+	max-width: 340px;
+	margin: 0 auto;	
 	text-align: center;
 	position: relative;
 	trasition: 0.3s;
